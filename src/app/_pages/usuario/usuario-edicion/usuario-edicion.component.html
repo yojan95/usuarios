@@ -1,0 +1,36 @@
+<p><B>Información del usuario</B></p>
+<div class="centerBtn">
+  <button class="btnWarn" mat-button color="primary" (click)="eliminarUsuario(usuario.idUsuario)">Eliminar</button>
+  <button class="btnNuevo" mat-button color="primary" (click)=" openNuevoUsuario()">Nuevo</button>
+</div>
+
+
+<div>
+  <mat-form-field class="labelName">
+    <input matInput placeholder="Nombres" [(ngModel)]="usuario.nombre">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-select placeholder="Seleccione Rol" [(ngModel)]="usuario.rol">
+      <mat-option *ngFor="let r of roles" [value]="r">
+        {{r.nombre}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+<div style="text-align: justify;margin-top: 2%;">
+  <mat-label><B>Activo</B></mat-label>
+</div>
+<div style="margin-top: 5%;">
+  <mat-radio-group aria-label="Activo" [(ngModel)]="usuario.activo">
+
+    <mat-radio-button value="Si">Si</mat-radio-button>
+    <mat-radio-button style="margin-left: 12px;" value="No">No</mat-radio-button>
+
+  </mat-radio-group>
+
+</div>
+<div style="margin-top: 5%;">
+  <button mat-raised-button style="margin-right: 10px;" color="primary" (click)="editarUsuario()">Aceptar</button>
+  <button mat-raised-button color="accent" (click)="cerrar()">Cancelar</button>
+</div>

@@ -1,0 +1,33 @@
+<B>Registrar usuario</B>
+
+<div class="example-container">
+
+    <mat-form-field>
+        <mat-label>Nombre</mat-label>
+        <input matInput placeholder="Nombre" [(ngModel)]="nombre">
+    </mat-form-field>
+    <!--[(value)]="idRolSeleccionado"-->
+    <mat-form-field>
+        <mat-select placeholder="Seleccione Rol" [(ngModel)]="rol">
+            <mat-option *ngFor="let r of (roles$ | async)" [value]="r">
+                {{r.nombre}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+
+</div>
+<div class="centerlabelRadio">
+    <mat-label><B>Activo</B></mat-label>
+</div>
+<div class="containerRadinBtn">
+    <mat-radio-group aria-label="Activo" [(ngModel)]="activo">
+
+        <mat-radio-button value="Si">Si</mat-radio-button>
+        <mat-radio-button style="margin-left: 12px;" value="No">No</mat-radio-button>
+    </mat-radio-group>
+
+</div>
+<div class="containerBtn">
+    <button class="btnRegistrar" mat-raised-button color="primary" (click)="registrarUsuario()">Guardar</button>
+    <button mat-raised-button color="accent" (click)="cerrar()">Cancelar</button>
+</div>

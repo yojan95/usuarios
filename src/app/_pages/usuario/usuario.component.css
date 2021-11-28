@@ -1,0 +1,109 @@
+
+  
+  table {
+    width: 100%;
+ 
+  }
+
+  .mat-form-field {
+    font-size: 14px;
+    width: 23.4%;
+  }
+
+  .input{
+    position:relative;
+    top:5px;
+    right: 1px;
+    margin-left: 15px;
+  }
+
+  .btnConsultar{
+    background-color: #3f51b5;
+    color:#fff;
+    top: 3px;
+    margin-left: 15px;
+    
+  }
+
+  .btnLimpiar{
+    background-color: #3f51b5;
+    color:#fff;
+    top: 3px;
+    margin-left: 5px;
+  }
+
+  .btnCrearUsuario{
+    background-color: #3f51b5;
+    color:#fff;
+    top: 3px;
+    margin-left: 5px;
+    margin-bottom: 9px;
+  }
+
+  .mat-column-idUsuario {
+    word-wrap: break-word !important;
+    white-space: unset !important;
+    flex: 0 0 27% !important;
+    width: 20% !important;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+  
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
+  
+  .mat-column-nombres {
+    word-wrap: break-word !important;
+    white-space: unset !important;
+    flex: 0 0 25% !important;
+    width: 25% !important;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  
+    word-break: break-word;
+  
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
+  
+  .mat-column-activo {
+    word-wrap: break-word !important;
+    white-space: unset !important;
+    flex: 0 0 17% !important;
+    width: 23% !important;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  
+    word-break: break-word;
+  
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
+  
+  .mat-column-Rol {
+    word-wrap: break-word !important;
+    white-space: unset !important;
+    flex: 0 0 17% !important;
+    width: 25% !important;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  
+    word-break: break-word;
+  
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
+
+  .mat-header-cell{
+    margin-top: 18px;
+  }
+ 
